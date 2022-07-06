@@ -1,11 +1,16 @@
+import React from 'react';
+import '../src/assets/css/style.css';
+import Starfield from 'react-starfield-animation';
 
-
-function App() {
+export default function App() {
+  
   return (
-    <div>
-      
-    </div>
+    <Starfield
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+        }}
+      />
   );
 }
-
-export default App;
