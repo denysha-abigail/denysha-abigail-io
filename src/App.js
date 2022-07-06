@@ -14,7 +14,9 @@ export default function App() {
           height: '100%',
         }}
       />
-      <ContactForm/>
+      <div>
+        <ContactForm/>
+      </div>
     </>
   );
 }
