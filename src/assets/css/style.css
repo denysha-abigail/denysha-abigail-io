@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Special+Elite&display=swap');
 
 :root {
+    --header-color: white;
     --bg-color: #0f0f19;
     /* rgb(15, 15, 25); */
     /* #252525 */
@@ -17,3 +18,64 @@
 body {
     background-color: var(--bg-color);
 }
+
+/* contact section starts */
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h1 {
+    color: var(--header-color);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-form label {
+    color: var(--header-color);
+    letter-spacing: .5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--header-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 15px;
+    color: var(--bg-color);
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--header-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.error-text {
+    color: var(--header-color);
+    padding: 0 15px 15px 15px;
+    text-align: center;
+}
+
+/* contact section ends */

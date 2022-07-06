@@ -1,5 +1,6 @@
 import React from 'react';
 import '../src/assets/css/style.css';
+import ContactForm from './components/Contact';
 import Starfield from 'react-starfield-animation';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
           height: '100%',
         }}
       />
+      <ContactForm/>
     </>
   );
 }
