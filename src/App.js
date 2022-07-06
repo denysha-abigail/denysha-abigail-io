@@ -5,6 +5,7 @@ import Starfield from 'react-starfield-animation';
 export default function App() {
   
   return (
+    <>
     <Starfield
         style={{
           position: 'absolute',
@@ -12,5 +13,6 @@ export default function App() {
           height: '100%',
         }}
       />
+    </>
   );
 }
