@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -11,13 +11,13 @@ function ContactForm() {
             const isValid = validateEmail(e.target.value);
 
             if (!isValid) {
-                setErrorMessage('email is invalid.');
+                setErrorMessage('Email is invalid');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(`${e.target.name} is required`);
             } else {
                 setErrorMessage('');
             }
@@ -35,8 +35,8 @@ function ContactForm() {
 
     return (
         <section className="contact-form">
-                <h1>Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
+            <h1>Say Hi . . .</h1>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="Enter Name" />
@@ -51,7 +51,7 @@ function ContactForm() {
                 </div>
                 {errorMessage && (
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <p className="error-text">{capitalizeFirstLetter(errorMessage)}</p>
                     </div>
                 )}
                 <button type="submit">Submit</button>

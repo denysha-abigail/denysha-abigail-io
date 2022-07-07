@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Special+Elite&display=swap');
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 :root {
     --header-color: white;
     --bg-color: #0f0f19;
     /* rgb(15, 15, 25); */
     /* #252525 */
+    /* #0f0f19 */
 }
 
 * {
@@ -42,12 +55,18 @@ canvas {
     left: 25%;
     border: 1px solid var(--header-color);
     border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
 }
 
 .contact-form h1 {
     color: var(--header-color);
     width: 100%;
     text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-bottom: 15px;
 }
 
 .contact-form label {
@@ -60,6 +79,7 @@ canvas {
     border: 1px solid var(--header-color);
     display: block;
     padding: 7px 15px;
+    width: 500px;
     font-size: 15px;
     color: var(--bg-color);
     margin-bottom: 15px;
