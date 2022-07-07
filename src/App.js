@@ -1,6 +1,5 @@
 import React from 'react';
 import '../src/assets/css/style.css';
-import Menu from './components/Menu';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Starfield from 'react-starfield-animation';
@@ -9,7 +8,6 @@ export default function App() {
 
   return (
     <>
-      {/* <Menu/> */}
       <Starfield
         style={{
           position: 'absolute',
@@ -17,7 +15,7 @@ export default function App() {
           height: '100%'
         }}
       />
-      {/* <About/> */}
+      <About/>
       <ContactForm />
     </>
   );
