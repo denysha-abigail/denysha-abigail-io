@@ -62,12 +62,15 @@ canvas {
     letter-spacing: .25rem;
 }
 
-.contact-form h1 {
+.contact-form h1, .about-section h1 {
     color: var(--header-color);
     width: 100%;
     text-align: center;
     font-size: 35px;
     font-weight: lighter;
+}
+
+.contact-form h1 {
     padding-bottom: 15px;
 }
 
@@ -117,6 +120,38 @@ canvas {
     padding: 0 15px 15px 15px;
     text-align: center;
 }
-
 /* contact section ends */
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: 25%;
+    border: 1px solid var(--header-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+    background-color: rgba(255, 255, 255, 0.50);
+    letter-spacing: .25rem;
+}
+
+.about-section p {
+    margin: 20px;
+    padding: 20px;
+}
+
+.cover {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
 
