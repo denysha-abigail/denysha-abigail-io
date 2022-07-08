@@ -15,9 +15,6 @@
 :root {
     --header-color: white;
     --bg-color: #0f0f19;
-    /* rgb(15, 15, 25); */
-    /* #252525 */
-    /* #0f0f19 */
 }
 
 * {
@@ -196,3 +193,4 @@ canvas {
 .hide {
     display: none;
 }
+
