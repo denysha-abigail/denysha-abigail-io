@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../src/assets/css/style.css';
 import About from './components/About';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import Starfield from 'react-starfield-animation';
 import SocialIcons from './components/NavBar';
 
@@ -17,12 +18,13 @@ export default function App() {
         }}
       />
       <SocialIcons setContactSelected={setContactSelected}/>
+        <Resume/>
       <div>
-      {!contactSelected ? (
+      {/* {!contactSelected ? (
       <About/>
       ) : (
         <ContactForm />
-      )}
+      )} */}
       </div>
     </>
   );

@@ -27,6 +27,7 @@ export default function About() {
                 <br/>
                 <a href="https://github.com/denysha-abigail" target="_blank" className='social-icon'><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/denysha-guerrios-armaiz-ab2750229/" target="_blank" className='social-icon'><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://stackoverflow.com/users/17819429/denysha-abigail" target="_blank" className='social-icon'><i class="fa-brands fa-stack-overflow"></i></a>
             </p>
         </div>
     )

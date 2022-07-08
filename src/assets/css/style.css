@@ -205,3 +205,14 @@ canvas {
 a {
     cursor: pointer;
 }
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-link {
+    color: var(--header-color);
+    text-decoration: none;
+}
