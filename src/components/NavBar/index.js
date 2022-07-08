@@ -1,33 +1,38 @@
-import { CircleMenu, CircleMenuItem } from "react-circular-menu";
+import React from "react";
+import { GhostNavbar } from "react-hamburger-menus";
 
-export function Menu() {
-    return (
-      <div className="menu" style={{ marginTop: "700px", marginLeft: "75px" }}>
-        <CircleMenu
-          startAngle={90}
-          rotationAngle={-270}
-          itemSize={2}
-          radius={4}
-          rotationAngleInclusive={false}
-        >
-          <CircleMenuItem
-            tooltip="Home"
-            tooltipPlacement="left"
-          >
-            <i class="fa-solid fa-shuttle-space"/>
-          </CircleMenuItem>
-          <CircleMenuItem tooltip="About" tooltipPlacement="right">
-          <i class="fa-solid fa-shuttle-space"/>
-          </CircleMenuItem>
-          <CircleMenuItem tooltip="Contact" tooltipPlacement="right">
-          <i class="fa-solid fa-shuttle-space"/>
-          </CircleMenuItem>
-          <CircleMenuItem tooltip="Projects" tooltipPlacement="left">
-          <i class="fa-solid fa-shuttle-space"/>
-          </CircleMenuItem>
-        </CircleMenu>
-      </div>
-    );
-  }
+import "../../assets/css/style.css";
 
-  export default Menu;
+const Menu = () => {
+  return (
+    <div className="App">
+      <GhostNavbar
+        styles={{
+          fontColor: "#fff",
+          fontHoverColor: "black",
+          listHoverColor: ["transparent", "#fff"],
+          floatButtonX: 87,
+          floatButtonY: 15,
+          navigationButton: {
+            borderRadius: "5px",
+            width: "50px",
+            backgroundColor: "black"
+          },
+          navigationBackground: {
+            backgroundColor: "black"
+          },
+          iconColor: "#fff"
+        }}
+      >
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>PROJECTS</li>
+          <li>CONTACT</li>
+        </ul>
+      </GhostNavbar>
+    </div>
+  );
+};
+
+export default Menu;
