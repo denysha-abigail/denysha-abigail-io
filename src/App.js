@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../src/assets/css/style.css';
 import About from './components/About';
 import ContactForm from './components/Contact';
@@ -6,7 +6,7 @@ import Starfield from 'react-starfield-animation';
 import SocialIcons from './components/NavBar';
 
 export default function App() {
-
+  const [contactSelected, setContactSelected] = useState(false);
   return (
     <>
       <Starfield
@@ -16,9 +16,14 @@ export default function App() {
           height: '100%'
         }}
       />
-      <SocialIcons/>
-      {/* <About/> */}
-      {/* <ContactForm /> */}
+      <SocialIcons setContactSelected={setContactSelected}/>
+      <div>
+      {!contactSelected ? (
+      <About/>
+      ) : (
+        <ContactForm />
+      )}
+      </div>
     </>
   );
 }
