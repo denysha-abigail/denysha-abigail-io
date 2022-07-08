@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
-import '../../assets/css/style.css'
+import ReactTooltip from 'react-tooltip';
+import '../../assets/css/style.css';
 
 const DarkTheme = {
 
-    body:"#ffffff",
-    text:"#FCF6F4",
-    fontFamily:"'Source Sans Pro', sans-serif",
-    textRgba : "252, 246, 244",
-    bodyRgba:"0,0,0",
+    body: "#ffffff",
+    text: "#FCF6F4",
+    fontFamily: "'Source Sans Pro', sans-serif",
+    textRgba: "252, 246, 244",
+    bodyRgba: "0,0,0",
 }
 
 const Icons = styled.div`
@@ -28,54 +29,56 @@ z-index:3;
 const Line = styled(motion.span)`
 width: 2px;
 height: 8rem;
-background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body  };
+background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `
 
 const SocialIcons = (props) => {
     return (
         <Icons>
             <motion.div
-            initial={{transform:"scale(0)"}}
-            animate={{scale:[0,1,1.5,1]}}
-            transition={{type:'spring', duration:1, delay:1}}
+                initial={{ transform: "scale(0)" }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: 'spring', duration: 1, delay: 1 }}
             >
-                    <a href="/" width={25} height={25}><i class="fa-solid fa-earth-americas icon"></i></a>
+                <a href="/" data-tip="Home" width={25} height={25}><i class="fa-solid fa-earth-americas icon"></i></a>
+                <ReactTooltip place="right" type="light" effect="float"/>
             </motion.div>
             <motion.div
-            initial={{transform:"scale(0)"}}
-            animate={{scale:[0,1,1.5,1]}}
-            transition={{type:'spring', duration:1, delay:1.2}}
+                initial={{ transform: "scale(0)" }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: 'spring', duration: 1, delay: 1.2 }}
             >
-                    <a width={25} height={25}><i class="fa-solid fa-user-astronaut icon"></i></a>
+                <a data-tip="About" width={25} height={25}><i class="fa-solid fa-user-astronaut icon"></i></a>
+
             </motion.div>
             <motion.div
-            initial={{transform:"scale(0)"}}
-            animate={{scale:[0,1,1.5,1]}}
-            transition={{type:'spring', duration:1, delay:1.4}}
+                initial={{ transform: "scale(0)" }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: 'spring', duration: 1, delay: 1.4 }}
             >
-                    <a width={25} height={25}><i class="fa-solid fa-shuttle-space icon"></i></a>
+                <a data-tip="Projects" width={25} height={25}><i class="fa-solid fa-shuttle-space icon"></i></a>
             </motion.div>
             <motion.div
-            initial={{transform:"scale(0)"}}
-            animate={{scale:[0,1,1.5,1]}}
-            transition={{type:'spring', duration:1, delay:1.6}}
+                initial={{ transform: "scale(0)" }}
+                animate={{ scale: [0, 1, 1.5, 1] }}
+                transition={{ type: 'spring', duration: 1, delay: 1.6 }}
             >
-                    <a width={25} height={25}><i class="fa-solid fa-satellite icon"></i></a>
+                <a data-tip="Contact" width={25} height={25}><i class="fa-solid fa-satellite icon"></i></a>
             </motion.div>
 
             <Line color={props.theme}
 
-initial={
-    {
-        height:0
-    }
-}
-animate={{
-    height: '8rem'
-}}
-transition={{
-    type:'spring', duration:1, delay:0.8
-}}
+                initial={
+                    {
+                        height: 0
+                    }
+                }
+                animate={{
+                    height: '8rem'
+                }}
+                transition={{
+                    type: 'spring', duration: 1, delay: 0.8
+                }}
             />
         </Icons>
     )

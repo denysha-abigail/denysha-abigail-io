@@ -186,7 +186,7 @@ canvas {
     padding: 15px;
 }
 
-.social-icon:hover, .icon:hover {
+.social-icon:hover {
     color: rgba(255, 255, 255, 0.75);
 }
 
@@ -196,6 +196,10 @@ canvas {
 
 .icon {
     color: white;
+}
+
+.icon:hover {
+    color: rgba(255, 255, 255, 0.50);
 }
 
 a {
