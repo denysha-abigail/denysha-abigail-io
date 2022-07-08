@@ -186,10 +186,18 @@ canvas {
     padding: 15px;
 }
 
-.social-icon:hover {
+.social-icon:hover, .icon:hover {
     color: rgba(255, 255, 255, 0.75);
 }
 
 .hide {
     display: none;
+}
+
+.icon {
+    color: white;
+}
+
+a {
+    cursor: pointer;
 }

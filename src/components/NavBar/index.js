@@ -1,38 +1,84 @@
-import React from "react";
-import { GhostNavbar } from "react-hamburger-menus";
+import { motion } from 'framer-motion';
+import React from 'react';
+import styled from 'styled-components';
+import '../../assets/css/style.css'
 
-import "../../assets/css/style.css";
+const DarkTheme = {
 
-const Menu = () => {
-  return (
-    <div className="App">
-      <GhostNavbar
-        styles={{
-          fontColor: "#fff",
-          fontHoverColor: "black",
-          listHoverColor: ["transparent", "#fff"],
-          floatButtonX: 87,
-          floatButtonY: 15,
-          navigationButton: {
-            borderRadius: "5px",
-            width: "50px",
-            backgroundColor: "black"
-          },
-          navigationBackground: {
-            backgroundColor: "black"
-          },
-          iconColor: "#fff"
-        }}
-      >
-        <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
-          <li>CONTACT</li>
-        </ul>
-      </GhostNavbar>
-    </div>
-  );
-};
+    body:"#ffffff",
+    text:"#FCF6F4",
+    fontFamily:"'Source Sans Pro', sans-serif",
+    textRgba : "252, 246, 244",
+    bodyRgba:"0,0,0",
+}
 
-export default Menu;
+const Icons = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+position: fixed;
+bottom: 0;
+left: 2rem;
+z-index:3;
+&>*:not(:last-child){
+    margin: 0.5rem 0;
+}
+`
+
+const Line = styled(motion.span)`
+width: 2px;
+height: 8rem;
+background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body  };
+`
+
+const SocialIcons = (props) => {
+    return (
+        <Icons>
+            <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1}}
+            >
+                    <a href="/" width={25} height={25}><i class="fa-solid fa-earth-americas icon"></i></a>
+            </motion.div>
+            <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1.2}}
+            >
+                    <a width={25} height={25}><i class="fa-solid fa-user-astronaut icon"></i></a>
+            </motion.div>
+            <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1.4}}
+            >
+                    <a width={25} height={25}><i class="fa-solid fa-shuttle-space icon"></i></a>
+            </motion.div>
+            <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1.6}}
+            >
+                    <a width={25} height={25}><i class="fa-solid fa-satellite icon"></i></a>
+            </motion.div>
+
+            <Line color={props.theme}
+
+initial={
+    {
+        height:0
+    }
+}
+animate={{
+    height: '8rem'
+}}
+transition={{
+    type:'spring', duration:1, delay:0.8
+}}
+            />
+        </Icons>
+    )
+}
+
+export default SocialIcons;
