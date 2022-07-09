@@ -34,9 +34,20 @@ background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme
 
 const SocialIcons = (props) => {
     const {
-        contactSelected,
         setContactSelected
     } = props
+
+function renderContact() {
+    setContactSelected(true);
+}
+
+function renderAbout() {
+    setContactSelected(false);
+}
+
+function renderResume() {
+    console.log('resume clicked');
+}
 
     return (
         <Icons>
@@ -53,7 +64,7 @@ const SocialIcons = (props) => {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1.2 }}
             >
-                <a data-tip="About" width={25} height={25} onClick={() => setContactSelected(false)}><i class="fa-solid fa-user-astronaut icon"></i></a>
+                <a data-tip="About" width={25} height={25} onClick={renderAbout}><i class="fa-solid fa-user-astronaut icon"></i></a>
 
             </motion.div>
             <motion.div
@@ -68,14 +79,14 @@ const SocialIcons = (props) => {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1.6 }}
             >
-                <a data-tip="Contact" width={25} height={25} onClick={() => setContactSelected(true)}><i class="fa-solid fa-satellite icon"></i></a>
+                <a data-tip="Contact" width={25} height={25} onClick={renderContact}><i class="fa-solid fa-satellite icon"></i></a>
             </motion.div>
             <motion.div
                 initial={{ transform: "scale(0)" }}
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1.6 }}
             >
-                <a data-tip="Resume" width={25} height={25} onClick={() => setContactSelected(false)}><i class="fa-solid fa-file icon"></i></a>
+                <a data-tip="Resume" width={25} height={25} onClick={renderResume}><i class="fa-solid fa-file icon"></i></a>
             </motion.div>
 
             <Line color={props.theme}

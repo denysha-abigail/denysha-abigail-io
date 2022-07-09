@@ -8,6 +8,7 @@ import SocialIcons from './components/NavBar';
 
 export default function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  
   return (
     <>
       <Starfield
@@ -18,13 +19,13 @@ export default function App() {
         }}
       />
       <SocialIcons setContactSelected={setContactSelected}/>
-        <Resume/>
+        {/* <Resume/> */}
       <div>
-      {/* {!contactSelected ? (
+      {!contactSelected ? (
       <About/>
       ) : (
         <ContactForm />
-      )} */}
+      )}
       </div>
     </>
   );
