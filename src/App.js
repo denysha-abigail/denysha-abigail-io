@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../src/assets/css/style.css';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Starfield from 'react-starfield-animation';
@@ -11,6 +12,7 @@ export default function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [aboutSelected, setAboutSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
 
   return (
     <>
@@ -21,7 +23,9 @@ export default function App() {
           height: '100%'
         }}
       />
-      <SocialIcons setContactSelected={setContactSelected} setAboutSelected={setAboutSelected} setResumeSelected={setResumeSelected}/>
+      <SocialIcons 
+      setContactSelected={setContactSelected} setAboutSelected={setAboutSelected} setResumeSelected={setResumeSelected}
+      setProjectsSelected={setProjectsSelected}/>
       <div>
       {!contactSelected ? (
       <Home/>
@@ -37,6 +41,11 @@ export default function App() {
       <Home/>
       ) : (
         <Resume />
+      )}
+      {!projectsSelected ? (
+      <Home/>
+      ) : (
+        <Projects />
       )}
       </div>
     </>

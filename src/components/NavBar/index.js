@@ -36,25 +36,36 @@ const SocialIcons = (props) => {
     const {
         setContactSelected,
         setAboutSelected,
-        setResumeSelected
+        setResumeSelected,
+        setProjectsSelected
     } = props
 
 function renderContact() {
     setContactSelected(true);
     setAboutSelected(false);
     setResumeSelected(false);
+    setProjectsSelected(false);
 }
 
 function renderAbout() {
+    setAboutSelected(true);
     setContactSelected(false);
     setResumeSelected(false);
-    setAboutSelected(true);
+    setProjectsSelected(false);
 }
 
 function renderResume() {
+    setResumeSelected(true);
     setContactSelected(false);
     setAboutSelected(false);
-    setResumeSelected(true);
+    setProjectsSelected(false);
+}
+
+function renderProjects() {
+    setProjectsSelected(true);
+    setContactSelected(false);
+    setAboutSelected(false);
+    setResumeSelected(false);
 }
 
     return (
@@ -80,7 +91,7 @@ function renderResume() {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1.4 }}
             >
-                <a data-tip="Projects" width={25} height={25}><i class="fa-solid fa-shuttle-space icon"></i></a>
+                <a data-tip="Projects" width={25} height={25} onClick={renderProjects}><i class="fa-solid fa-shuttle-space icon"></i></a>
             </motion.div>
             <motion.div
                 initial={{ transform: "scale(0)" }}
