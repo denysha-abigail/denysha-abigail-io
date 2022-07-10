@@ -34,7 +34,7 @@ background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme
 
 const SocialIcons = (props) => {
     const {
-        setContactSelected
+        setContactSelected,
     } = props
 
 function renderContact() {
@@ -46,7 +46,7 @@ function renderAbout() {
 }
 
 function renderResume() {
-    console.log('resume clicked');
+    console.log('resume clicked')
 }
 
     return (
