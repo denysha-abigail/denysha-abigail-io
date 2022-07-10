@@ -1,6 +1,6 @@
 export const projects = [
     {
-        img: "../../assets/images/nodebase_preview.png",
+        img: "",
         name: "Nodebase 2.0",
         description: "Server-side command-line interface application intended to store and/or interact with employee data in a SQL database",
         tech: ["#javascript ", "#mysql ", "#npm ", "#node-js "],
@@ -48,5 +48,3 @@ export const projects = [
         app: "https://denysha-abigail.github.io/ClimateCast/"
     }
 ]
-
-
