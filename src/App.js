@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Starfield from 'react-starfield-animation';
-import SocialIcons from './components/NavBar';
+import NavBar from './components/NavBar';
 
 export default function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -23,7 +23,7 @@ export default function App() {
           height: '100%'
         }}
       />
-      <SocialIcons 
+      <NavBar 
       setContactSelected={setContactSelected} setAboutSelected={setAboutSelected} setResumeSelected={setResumeSelected}
       setProjectsSelected={setProjectsSelected}/>
       <div>

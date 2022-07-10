@@ -32,7 +32,7 @@ height: 8rem;
 background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `
 
-const SocialIcons = (props) => {
+const NavBar = (props) => {
     const {
         setContactSelected,
         setAboutSelected,
@@ -126,4 +126,4 @@ function renderProjects() {
     )
 }
 
-export default SocialIcons;
+export default NavBar;
