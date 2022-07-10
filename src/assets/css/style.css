@@ -152,16 +152,16 @@ canvas {
     color: var(--bg-color);
 }
 
-.about-section::-webkit-scrollbar {
+.about-section::-webkit-scrollbar, .container::-webkit-scrollbar {
     width: 1em;
 }
  
-.about-section::-webkit-scrollbar-track {
+.about-section::-webkit-scrollbar-track, .container::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
  
-.about-section::-webkit-scrollbar-thumb {
+.about-section::-webkit-scrollbar-thumb, .container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.75);
   outline: 1px solid slategrey;
   border-radius: 0 20px 20px 0;
@@ -178,7 +178,6 @@ canvas {
 .project-icon {
     font-size: 2em;
     cursor: pointer;
-    text-align: center;
     color: var(--bg-color);
     padding: 15px;
 }
@@ -234,15 +233,12 @@ a {
 }
 
 .container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 400px;
-    margin: 15px;
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
     padding: 15px;
+    text-align: center;
     border: 1px solid var(--header-color);
     border-radius: 20px;
     box-shadow: 0 0 10px var(--header-color);
@@ -250,22 +246,12 @@ a {
     -webkit-animation: float 6s ease-in-out infinite;
     background-color: rgba(255, 255, 255, 0.50);
     letter-spacing: .25rem;
+    overflow-y: scroll;
 }
 
-    /* display: flex;
-    flex-wrap: wrap;
+.card-box {
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    width: 700px;
-    height: 500px;
-    top: 20%;
-    left: 25%;
-    border: 1px solid var(--header-color);
-    border-radius: 20px;
-    box-shadow: 0 0 10px white;
-    animation: float 6s ease-in-out infinite;
-    -webkit-animation: float 6s ease-in-out infinite;
-    background-color: rgba(255, 255, 255, 0.50);
-    letter-spacing: .25rem;
-    overflow-y: scroll; */
+    flex-wrap: wrap;
+}

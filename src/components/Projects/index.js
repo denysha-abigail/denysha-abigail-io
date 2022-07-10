@@ -4,7 +4,7 @@ import { projects } from './indexData';
 
 export default function Projects() {
     return (
-        <div>
+        <div className="card-box">
             {
             projects.map(project => {
                 return (<Card img={project.img} name={project.name} description={project.description} tech={project.tech} github={project.github} app={project.app}/>)

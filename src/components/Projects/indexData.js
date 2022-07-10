@@ -21,7 +21,7 @@ export const projects = [
         description: "Full stack web application implementing the MVC paradigm, ORM, CRUD functionality, template generating engines, and authentication features to deliver a CMS-style MVP startup forum resembling Reddit",
         tech: ["#javascript ", "#mysql ", "#css ", "#html ", "#cms ", "#npm ", "#crud ", "#orm ", "#mvc ", "#mvp ", "#node-js ", "#handlebars-js "],
         github: "https://github.com/denysha-abigail/Rodde-It",
-        app: "rodde-it.herokuapp.com/"
+        app: "https://rodde-it.herokuapp.com/"
     },
     {
         img: "",
