@@ -3,7 +3,7 @@ import '../../assets/css/style.css';
 
 export default function Card(props) {
     return (
-        <div className="container">
+        <div className="container" >
             <div className="card-img">
                 <img
                     className="card-img-top"
@@ -22,7 +22,7 @@ export default function Card(props) {
                 <div className="deploy-btn">
                     <a href={props.github} target="_blank" className='project-icon'><i class="fa-brands fa-github"></i></a>
                     {props.app === "" ? (
-                       null
+                        null
                     ) : (
                         <a href={props.app} target="_blank" className='project-icon'><i class="fa-solid fa-power-off"></i></a>
                     )}
