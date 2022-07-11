@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/denysha-abigail-io/static/css/main.ae46e6ca.chunk.css",
-    "main.js": "/denysha-abigail-io/static/js/main.e267c3e0.chunk.js",
-    "main.js.map": "/denysha-abigail-io/static/js/main.e267c3e0.chunk.js.map",
+    "main.js": "/denysha-abigail-io/static/js/main.6e1f3cb5.chunk.js",
+    "main.js.map": "/denysha-abigail-io/static/js/main.6e1f3cb5.chunk.js.map",
     "runtime-main.js": "/denysha-abigail-io/static/js/runtime-main.6f0741d2.js",
     "runtime-main.js.map": "/denysha-abigail-io/static/js/runtime-main.6f0741d2.js.map",
     "static/js/2.e7187a96.chunk.js": "/denysha-abigail-io/static/js/2.e7187a96.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.6f0741d2.js",
     "static/js/2.e7187a96.chunk.js",
     "static/css/main.ae46e6ca.chunk.css",
-    "static/js/main.e267c3e0.chunk.js"
+    "static/js/main.6e1f3cb5.chunk.js"
   ]
 }
