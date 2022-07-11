@@ -75,7 +75,7 @@ function renderProjects() {
                 animate={{ scale: [0, 1, 1.5, 1] }}
                 transition={{ type: 'spring', duration: 1, delay: 1 }}
             >
-                <a href="/" data-tip="Home" width={25} height={25}><i class="fa-solid fa-earth-americas icon"></i></a>
+                <a href="http://denysha-abigail.github.io/denysha-abigail-io" data-tip="Home" width={25} height={25}><i class="fa-solid fa-earth-americas icon"></i></a>
                 <ReactTooltip place="right" type="light" effect="float"/>
             </motion.div>
             <motion.div
