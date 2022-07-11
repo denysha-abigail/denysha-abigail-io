@@ -6,7 +6,7 @@ This React.js front-end web application utilizes HTML, CSS, JavaScript, Node.js,
 > Visit the deployed site [HERE](https://denysha-abigail.github.io/denysha-abigail-io/)
 
 ## Preview
-
+![screen-gif](./src/assets/images/Space.js.gif)
 
 ## Credits
 - Denysha Guerrios-Armaiz, 07/2022 | [GitHub](https://github.com/denysha-abigail) | [LinkedIn](https://www.linkedin.com/in/denysha-guerrios-armaiz-ab2750229/)
