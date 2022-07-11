@@ -107,7 +107,8 @@ canvas {
 }
 
 .contact-form button:hover {
-    opacity: 50%;
+    background-color: rgba(15, 15, 25, .75);
+    color: var(--header-color);
     cursor: pointer;
 }
 
