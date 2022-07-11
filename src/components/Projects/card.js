@@ -4,12 +4,6 @@ import '../../assets/css/style.css';
 export default function Card(props) {
     return (
         <div className="container" >
-            <div className="card-img">
-                <img
-                    className="card-img-top"
-                    src={props.img}
-                />
-            </div>
             <div className="card-body">
                 <h3 className="card-title">{props.name}</h3>
                 <br />
