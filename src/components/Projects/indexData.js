@@ -21,11 +21,11 @@ export const projects = [
         app: "https://rodde-it.herokuapp.com/"
     },
     {
-        name: "Roses are Red",
-        description: "Front-end date planner web application that utilizes multiple server-side APIs to display event and brewery information based on searched cities for a specific date or range of dates",
-        tech: ["#css ", "#html ", "#jquery ", "#front-end ", "#vanilla-javascript ", "#bulma ", "#moment-js ", "#iconic ", "#server-side-api "],
-        github: "https://github.com/denysha-abigail/roses-are-red",
-        app: "https://denysha-abigail.github.io/roses-are-red/"
+        name: "OG-SNKRS",
+        description: "Sneaker platform where sneakerheads and shoe enthusiasts have the ability to view latest releases, compare prices, and choose the best resale site option to purchase from",
+        tech: ["#html ", "#css ", "#javascript ", "#mongodb ", "#express ", "#react ", "#node ", "#npm ", "#heroku "],
+        github: "https://github.com/denysha-abigail/OG-SNKRS",
+        app: "https://og-snkrs.herokuapp.com/"
     },
     {
         name: "APIgram",
